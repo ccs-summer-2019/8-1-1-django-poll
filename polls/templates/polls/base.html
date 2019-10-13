@@ -1,0 +1,12 @@
+{% load static %}
+<html>
+  <head>
+    <title>Django Rocks</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/css/styles.css' %}">
+  </head>
+  <body>
+    <h1>Welcome to my awesome website!</h1>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
