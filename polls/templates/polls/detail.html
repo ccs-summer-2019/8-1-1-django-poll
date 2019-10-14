@@ -1,7 +1,9 @@
 {% extends 'polls/base.html' %}
 <!-- {{ question }} -->
 {% block content %}
-<h1>{{ question.question_text }}</h1>
+<p>{{ question.question_text }}</p>
+<p>{{question.author}}</p>
+<p>{{question.pub_date}}</p>
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 

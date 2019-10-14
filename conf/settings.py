@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     # third party
 
     # local
+    'accounts.apps.AccountsConfig',
     'polls.apps.PollsConfig',
 ]
 
@@ -123,3 +124,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LOGIN_REDIRECT_URL = '/polls/'
+LOGOUT_REDIRECT_URL = '/login/'
